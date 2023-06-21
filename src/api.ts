@@ -1,5 +1,5 @@
 const BASE_URL = "https://api.openweathermap.org/data/2.5/weather?q="
-const API_STRING  = "&APPID=0d18c9114f22b64e5aeda6e703b2ac70"
+const API_STRING  = `&APPID=${process.env.REACT_APP_API_KEY}`
 
 export const fetchData = async (city: string) => {
   console.log(BASE_URL + city + API_STRING)
