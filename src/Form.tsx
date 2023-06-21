@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { fetchData } from './api'
+import { fetchData } from './apiClient'
 
 interface FormProps {
   onDataFetch: (data: any, error: any) => void
