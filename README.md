@@ -1,6 +1,10 @@
 # Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### .env file instructions
+
+You will need to add a .env file to the root directory of this repository in order for the app to work. Within this .env file, add the following line of code and replace the API_KEY with a valid OpenWeather key:
+
+`REACT_APP_API_KEY={API_KEY}`
 
 ### `npm start`
 
