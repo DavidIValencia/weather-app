@@ -7,15 +7,15 @@ const App = () => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
 
-  const handleDataFetch = (fetchedData: any, fetchError: any) => {
-    setData(fetchedData);
+  const handleFormSubmission = (fetchData: any, fetchError: any) => {
+    setData(fetchData);
     setError(fetchError);
   };
 
   return (
     <div className="app">
       <Header />
-      <Form onDataFetch={handleDataFetch} />
+      <Form onFormSubmission={handleFormSubmission} />
       <Result data={data} error={error} />
     </div>
   )

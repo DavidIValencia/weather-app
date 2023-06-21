@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import { fetchData } from './apiClient'
 
 interface FormProps {
-  onDataFetch: (data: any, error: any) => void
+  onFormSubmission: (data: any, error: any) => void
 }
 
 interface Change {
   (event: React.ChangeEvent<HTMLInputElement>): void
 }
 
-const Form: React.FC<FormProps> = ({ onDataFetch }) => {
+const Form: React.FC<FormProps> = ({ onFormSubmission }) => {
   const [city, setCity] = useState('')
 
   const handleButtonClick = async () => {
@@ -24,11 +24,10 @@ const Form: React.FC<FormProps> = ({ onDataFetch }) => {
         error = 'An unexpected error occurred.';
       }
     } finally {
-      onDataFetch(data, error)
+      onFormSubmission(data, error)
       setCity("")
     }
   };
-
 
   const handleChange: Change = event => setCity(event.target.value)
 
