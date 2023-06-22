@@ -6,7 +6,13 @@ You will need to add a .env file to the root directory of this repository in ord
 
 `REACT_APP_API_KEY={API_KEY}`
 
-### `npm start`
+### Running the App
 
-Runs the app in the development mode.\
+After you have added the .env file, run the following commands in your terminal:
+
+`npm install`
+
+`npm start`
+
+This will run the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
